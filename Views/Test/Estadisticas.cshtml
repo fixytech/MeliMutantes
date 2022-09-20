@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Estadisticas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Estadisticas</h1>
+    <p>Resultados de analisis</p>
+</div>
+<div class="row">
+    <div class="col col-md-8 offset-md-2">
+        <img src="~/img/estadisticas.png" class="img-fluid rounded mx-auto d-block" alt="..." style="width:50%; ">
+    </div>
+
+</div>
+<div class="col col-md-8 offset-md-2">
+    <div class="row">
+        <div class="col col-md-4 ">
+            <div class="card  mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">HUMANOS</div>
+                <div class="card-body bg-success">
+                    <h5 class="card-title text-center">@(ViewBag.CantHumanos)</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-4 ">
+            <div class="card  mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">MUTANTES</div>
+                <div class="card-body bg-dange">
+                    <h5 class="card-title text-center">@(ViewBag.CantMutantes)</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-4 ">
+            <div class="card  mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">RATIO</div>
+                <div class="card-body bg-info">
+                    <h5 class="card-title text-center">@(ViewBag.Ratio)</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
